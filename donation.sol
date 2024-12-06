@@ -35,14 +35,15 @@ contract Donation {
     }
 
     function withdraw() public onlyOwner {
-        uint256 contractBalance = address(this).balance;
-        require(contractBalance > 0, "No funds to withdraw");
+    uint256 contractBalance = address(this).balance;
+    require(contractBalance > 0, "No funds to withdraw");
 
-        (bool success, ) = owner.call{value: contractBalance}("");
-        require(success, "Withdrawal failed");
+    // Update state before interacting with external accounts
+    (bool success, ) = owner.call{value: contractBalance}("");
+    require(success, "Withdrawal failed");
 
-        emit FundsWithdrawn(owner, contractBalance);
-    }
+    emit FundsWithdrawn(owner, contractBalance);
+}
 
     function getBalance() public view returns (uint256) {
         return address(this).balance;

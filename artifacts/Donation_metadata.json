@@ -176,11 +176,11 @@
 			]
 		},
 		"donation.sol": {
-			"keccak256": "0xd5eae01b4807b29dad53b73749846cf5e76fa5c1aa2e980e0d2f5a08761ebf66",
+			"keccak256": "0x9c459bbb74757495ce0261eb96fb5984cbe1675d702c2d48121ae157c3af91b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6cc39916cec47c2b9a240082e4bff916263c32819c0aab19cab54cbc4561d1c0",
-				"dweb:/ipfs/QmTSKZx5uKGjpxFbdz7jrc1UsJTRifHrd41wHJRUnMvC6N"
+				"bzz-raw://c8f90c9839d3e83bdf5d63475f1badcb57c24ddaae3ab059adfbeb9e6d20b019",
+				"dweb:/ipfs/QmaVstasvoJiiX8PibmyiQNatUVfTRdadAsNi76SBNLwiD"
 			]
 		}
 	},
