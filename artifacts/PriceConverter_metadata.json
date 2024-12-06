@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"priceConverter.sol": "PriceConverter"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"priceConverter.sol": {
+			"keccak256": "0xc0e8281e12c152b96a42cde005ea9db5e8bcfb26aa652cc3e0b5e415d75430c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ce72d27d0cefb04d5082fad820d16d9e91d55e3896d8f61a9ab49ba809aa522",
+				"dweb:/ipfs/QmYRz7A5t8ijqPz3N6jE6g8unJXtYMjpMeFLc2NddFtEgB"
+			]
+		}
+	},
+	"version": 1
+}
