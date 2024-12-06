@@ -11,6 +11,102 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "donor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "DonationReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "FundsWithdrawn",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "donations",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "owner",
 				"outputs": [
@@ -21,6 +117,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -52,11 +155,11 @@
 	},
 	"sources": {
 		"donation.sol": {
-			"keccak256": "0x29f9edf394ba7530a29bc4404a72c23767a3459cd63fe2a53b91d5e7db47b12c",
+			"keccak256": "0x87ed42c4b6b2b923959962775628b8e54d9c8f1455dc8eac70a5ebae8514bb56",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://689fb741259a3eed9026307020a228d8bd2bd063970e259722d381ea1ac20d73",
-				"dweb:/ipfs/QmcfrKQNxMxZjueeegsfdda9G2PWkYmH5mYQhVrmB1wL9U"
+				"bzz-raw://0649df46130878e254aa6c3084b074f0d75907568342b51fac14224fa632469a",
+				"dweb:/ipfs/QmSudDrjoVHSPDpMhAQrbA78r3y9T4n9K4JXmmFiA99jyK"
 			]
 		}
 	},
