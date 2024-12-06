@@ -49,6 +49,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "MINIMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -154,12 +167,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"donation.sol": {
-			"keccak256": "0x87ed42c4b6b2b923959962775628b8e54d9c8f1455dc8eac70a5ebae8514bb56",
+		"PriceConverter.sol": {
+			"keccak256": "0xc0e8281e12c152b96a42cde005ea9db5e8bcfb26aa652cc3e0b5e415d75430c9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0649df46130878e254aa6c3084b074f0d75907568342b51fac14224fa632469a",
-				"dweb:/ipfs/QmSudDrjoVHSPDpMhAQrbA78r3y9T4n9K4JXmmFiA99jyK"
+				"bzz-raw://5ce72d27d0cefb04d5082fad820d16d9e91d55e3896d8f61a9ab49ba809aa522",
+				"dweb:/ipfs/QmYRz7A5t8ijqPz3N6jE6g8unJXtYMjpMeFLc2NddFtEgB"
+			]
+		},
+		"donation.sol": {
+			"keccak256": "0xd5eae01b4807b29dad53b73749846cf5e76fa5c1aa2e980e0d2f5a08761ebf66",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6cc39916cec47c2b9a240082e4bff916263c32819c0aab19cab54cbc4561d1c0",
+				"dweb:/ipfs/QmTSKZx5uKGjpxFbdz7jrc1UsJTRifHrd41wHJRUnMvC6N"
 			]
 		}
 	},

@@ -1,12 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.25;
+
+import "./PriceConverter.sol"; // Import the price converter library
+
 contract Donation {
+    using PriceConverter for uint256;
+
     address public owner;
+    uint256 public constant MINIMUM_USD = 50 * 1e18; // $50 in USD
 
     mapping(address => uint256) public donations;
     address[] public funders;
 
-    // Events for tracking donations and withdrawals
     event DonationReceived(address indexed donor, uint256 amount);
     event FundsWithdrawn(address indexed owner, uint256 amount);
 
@@ -20,10 +25,13 @@ contract Donation {
     }
 
     function fund() public payable {
-        require(msg.value > 0, "Donation must be greater than 0");
+        require(
+            msg.value.getConversionRate() >= MINIMUM_USD, 
+            "Minimum donation is $50"
+        );
         donations[msg.sender] += msg.value;
         funders.push(msg.sender);
-        emit DonationReceived(msg.sender, msg.value); // Emit donation event
+        emit DonationReceived(msg.sender, msg.value);
     }
 
     function withdraw() public onlyOwner {
@@ -33,7 +41,7 @@ contract Donation {
         (bool success, ) = owner.call{value: contractBalance}("");
         require(success, "Withdrawal failed");
 
-        emit FundsWithdrawn(owner, contractBalance); // Emit withdrawal event
+        emit FundsWithdrawn(owner, contractBalance);
     }
 
     function getBalance() public view returns (uint256) {

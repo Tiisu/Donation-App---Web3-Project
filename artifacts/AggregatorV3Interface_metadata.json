@@ -52,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"priceConverter.sol": "AggregatorV3Interface"
+			"PriceConverter.sol": "AggregatorV3Interface"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -66,7 +66,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"priceConverter.sol": {
+		"PriceConverter.sol": {
 			"keccak256": "0xc0e8281e12c152b96a42cde005ea9db5e8bcfb26aa652cc3e0b5e415d75430c9",
 			"license": "MIT",
 			"urls": [
