@@ -1,1 +1,1 @@
-This is  a donation app deployed on blockchain
+This is  a donation app deployed on the etherium blockchain
